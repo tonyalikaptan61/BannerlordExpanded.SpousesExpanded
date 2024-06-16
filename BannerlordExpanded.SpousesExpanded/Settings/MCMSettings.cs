@@ -16,20 +16,20 @@ namespace BannerlordExpanded.SpousesExpanded.Settings
 
 
 
-        [SettingPropertyGroup("{=BannerlordExpandedSpousesExpanded_Settings_Polygamy}Player Polygamy", GroupOrder = 0)]
-        [SettingPropertyBool("{=BannerlordExpandedSpousesExpanded_Settings_PolygamyEnabled}Enable", RequireRestart = true, IsToggle = true)]
+        [SettingPropertyGroup("{=BE_SE_OP002}Player Polygamy", GroupOrder = 0)]
+        [SettingPropertyBool("{=BE_SE_OP001}Enable", RequireRestart = true, IsToggle = true)]
         public bool PolygamyEnabled { get; set; } = true;
 
-        [SettingPropertyGroup("{=BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMember}I Dont Want Your Eldest Member", GroupOrder = 1)]
-        [SettingPropertyBool("{=BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMemberEnabled}Enable", HintText = "{=BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMemberEnabled_Desc}Enable the option to choose any of the clan's marry-able characters for marriage instead of only the oldest one.", RequireRestart = true, IsToggle = true)]
+        [SettingPropertyGroup("{=BE_SE_OP003}I Dont Want Your Eldest Member", GroupOrder = 1)]
+        [SettingPropertyBool("{=BE_SE_OP001}Enable", HintText = "{=BE_SE_OP004}Enable the option to choose any of the clan's marry-able characters for marriage instead of only the oldest one.", RequireRestart = true, IsToggle = true)]
         public bool DontWantEldestMemberEnabled { get; set; } = true;
 
-        [SettingPropertyGroup("{=BannerlordExpandedSpousesExpanded_Settings_MarriageOfferForPlayer}Marriage Offer For Player", GroupOrder = 1)]
-        [SettingPropertyBool("{=BannerlordExpandedSpousesExpanded_Settings_MarriageOfferForPlayerEnabled}Enable", RequireRestart = true, IsToggle = true)]
+        [SettingPropertyGroup("{=BE_SE_OP005}Marriage Offer For Player", GroupOrder = 1)]
+        [SettingPropertyBool("{=BE_SE_OP001}Enable", RequireRestart = true, IsToggle = true)]
         public bool MarriageOfferForPlayerEnabled { get; set; } = true;
 
-        [SettingPropertyGroup("{=BannerlordExpandedSpousesExpanded_Settings_Divorce}Player Divorce", GroupOrder = 1)]
-        [SettingPropertyBool("{=BannerlordExpandedSpousesExpanded_Settings_DivorceEnabled}Enable", RequireRestart = true, IsToggle = true)]
+        [SettingPropertyGroup("{=BE_SE_OP006}Player Divorce", GroupOrder = 1)]
+        [SettingPropertyBool("{=BE_SE_OP001}Enable", RequireRestart = true, IsToggle = true)]
         public bool DivorceEnabled { get; set; } = true;
     }
 }

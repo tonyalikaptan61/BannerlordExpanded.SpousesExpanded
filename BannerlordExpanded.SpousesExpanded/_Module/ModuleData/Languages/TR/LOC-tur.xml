@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+	<tag language="English" />
+  </tags>
+  <strings>
+	<!-- Base Dialogs -->
+	<string id="BE_SE_SD001" text="{?SPOUSE.GENDER}Hanımım{?}Kocam{\?}, seninle bir konu hakkında konuşmak istiyorum." />
+	<string id="BE_SE_SD002" text="Ne söylemek istiyorsun, {?PLAYER.GENDER}karım{?}kocam{\?}?" />
+	<string id="BE_SE_SD003" text="Boşver." />
+	
+	<!-- Polygamy (Set Main Spouse) -->
+	<string id="BE_SE_MS001" text="Birinci eşim olmanı istiyorum." />
+	<string id="BE_SE_MS002" text="Bundan emin misin, sevgili {?SPOUSE.GENDER}kocam{?}karım{\?}?" />
+	<string id="BE_SE_MS003" text="Evet, tabii ki!" />
+	<string id="BE_SE_MS004" text="Tekrar düşününce, fikrimi değiştirdim." />
+	<string id="BE_SE_MS005" text="Fazlasıyla mutlu oldum!" />
+	
+	<!-- Don't Want Eldest Member -->
+	<string id="BE_SE_DW001" text="Ben başka birini düşünmüştüm..." />
+	<string id="BE_SE_DW002" text="Aaa, öyle mi? Peki kimi düşünüyorsun?" />
+	<string id="BE_SE_DW003" text="Hmm.. Yani {HERO_NAME}'{.i} mi düşünüyorsun?" />
+	<string id="BE_SE_DW004" text="Aklında hiç kimse yok mu?" />
+	<string id="BE_SE_DW005" text="Evet, aynen öyle!" />
+	<string id="BE_SE_DW006" text="Tekrar düşününce, buna emin olamadım. Bir süre düşüneyim..." />
+	<string id="BE_SE_DW007" text="Kimi tercih edersin?" />
+	<string id="BE_SE_DW008" text="Seçili klan üyesiyle evlenmesini istediğin kişiyi seç." />
+	
+	<!-- Divorce -->
+	<string id="BE_SE_DV001" text="Bu evlilikten yoruldum. Boşanalım ve kendi yollarımıza gidelim." />
+	<string id="BE_SE_DV002" text="B-Bundan emin misin?[if:convo_dismayed][ib:nervous]" />
+	<string id="BE_SE_DV003" text="Evet, eminim." />
+	<string id="BE_SE_DV004" text="Hayır, sadece şaka yapıyordum!" />
+	
+	<!-- Settings -->
+	<string id="BE_SE_OP001" text="Etkinleştir" />
+	<string id="BE_SE_OP002" text="Oyuncu İçin Çok Eşlilik" />
+	<string id="BE_SE_OP003" text="En Büyük Üyenizi İstemiyorum" />
+	<string id="BE_SE_OP004" text="Oyuncu klanında evlenmeye uygun üyeler için yalnızca en büyük eş adayı yerine üye seçebilmek için bu modu etkinleştir." />
+	<string id="BE_SE_OP005" text="Oyuncuya Evlilik Teklifleri" />
+	<string id="BE_SE_OP006" text="Oyuncuya Boşanma Hakkı" />
+  </strings>
+</base>

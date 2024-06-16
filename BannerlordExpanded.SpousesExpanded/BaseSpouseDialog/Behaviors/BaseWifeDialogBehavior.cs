@@ -24,7 +24,7 @@ namespace BannerlordExpanded.SpousesExpanded.BaseSpouseDialog.Behaviors
 
         void AddDialogs(CampaignGameStarter gameStarter)
         {
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog", "hero_main_options", "BannerlordExpandedSpousesExpanded_SpouseDialog", "{=BannerlordExpandedSpousesExpanded_SpouseDialog}{?SPOUSE.GENDER}My wife{?}My husband{\\?}, I would like to talk to you about something.",
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog", "hero_main_options", "BannerlordExpandedSpousesExpanded_SpouseDialog", "{=BE_SE_SD001}{?SPOUSE.GENDER}My wife{?}My husband{\\?}, I would like to talk to you about something.",
                 () =>
                 {
                     if (!SpousesExpandedUtil.IsPlayerSpouse(Hero.OneToOneConversationHero))
@@ -32,8 +32,8 @@ namespace BannerlordExpanded.SpousesExpanded.BaseSpouseDialog.Behaviors
                     StringHelpers.SetCharacterProperties("SPOUSE", Hero.OneToOneConversationHero.CharacterObject, null, false);
                     return true;
                 }, null);
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_Start}What is it?", null, null);
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Cancel", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_Cancel}Nevermind.", null, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "{=BE_SE_SD002}What is it?", null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Cancel", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "lord_pretalk", "{=BE_SE_SD003}Nevermind.", null, null);
         }
     }
 }

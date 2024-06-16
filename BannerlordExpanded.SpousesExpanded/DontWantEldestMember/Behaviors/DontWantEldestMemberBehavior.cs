@@ -28,15 +28,15 @@ namespace BannerlordExpanded.SpousesExpanded.Behaviors
 
         private void AddDialogs(CampaignGameStarter gameStarter)
         {
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start", "lord_propose_marriage_to_clan_leader_response_other", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start}I was thinking of someone else...", () => IsGoodToShowDialog(), () => OpenInquiryMenu(), 101, null, null);
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start", "lord_propose_marriage_to_clan_leader_response_self", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start}I was thinking of someone else...", () => IsGoodToShowDialog(), () => OpenInquiryMenu(), 101, null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start", "lord_propose_marriage_to_clan_leader_response_other", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "{=BE_SE_DW001}I was thinking of someone else...", () => IsGoodToShowDialog(), () => OpenInquiryMenu(), 101, null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start", "lord_propose_marriage_to_clan_leader_response_self", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "{=BE_SE_DW001}I was thinking of someone else...", () => IsGoodToShowDialog(), () => OpenInquiryMenu(), 101, null, null);
 
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue}Who do you have in mind?", null, null, 100, null);
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2}I see. So you are interested in {HERO_NAME}?", () => IsSpouseCandidateValid(), null, 100, null);
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Failed", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_ContinueFailed}Do you have no one in mind?", () => !_isSpouseCandidateValid, null, 100, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "{=BE_SE_DW002}Who do you have in mind?", null, null, 100, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "{=BE_SE_DW003}I see. So you are interested in {HERO_NAME}?", () => IsSpouseCandidateValid(), null, 100, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Failed", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2", "lord_pretalk", "{=BE_SE_DW004}Do you have no one in mind?", () => !_isSpouseCandidateValid, null, 100, null);
 
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyConfirm", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "lord_propose_marriage_to_clan_leader_confirm", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyConfirm}Yes I am interested!", null, null, 100, null, null);
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyCancel", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyCancel}Sorry.. I am having second thoughts. Let me consider for a while...", null, null, 100, null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyConfirm", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "lord_propose_marriage_to_clan_leader_confirm", "{=BE_SE_DW005}Yes I am interested!", null, null, 100, null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyCancel", "BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_Reply", "lord_pretalk", "{=BE_SE_DW006}Sorry.. I am having second thoughts. Let me consider for a while...", null, null, 100, null, null);
 
         }
 
@@ -92,10 +92,10 @@ namespace BannerlordExpanded.SpousesExpanded.Behaviors
                         list.Add(new InquiryElement(hero.Id, hero.Name.ToString(), new ImageIdentifier(CharacterCode.CreateFrom(hero.CharacterObject))));
                 }
             }
-            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=BannerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Title}Who would you prefer?").ToString()
-                , new TextObject("{=annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Desc}Select Lord/Lady that you want to be the spouse of your selected clan member.").ToString()
-                , list, true, 1, 1, new TextObject("{=annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Confirm}Confirm").ToString()
-                , new TextObject("{=annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Cancel}Cancel").ToString()
+            MBInformationManager.ShowMultiSelectionInquiry(new MultiSelectionInquiryData(new TextObject("{=BE_SE_DW007}Who would you prefer?").ToString()
+                , new TextObject("{=BE_SE_DW008}Select Lord/Lady that you want to be the spouse of your selected clan member.").ToString()
+                , list, true, 1, 1, new TextObject("{=5Unqsx3N}Confirm").ToString()
+                , new TextObject("{=3CpNUnVl}Cancel").ToString()
                 , MultiSelectionInquiry_ManageSelectedHero
                 , MultiSelectionInquiry_Cancelled));
         }

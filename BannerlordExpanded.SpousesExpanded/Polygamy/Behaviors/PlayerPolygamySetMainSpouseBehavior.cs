@@ -25,7 +25,7 @@ namespace BannerlordExpanded.SpousesExpanded.Polygamy.Behaviors
 
         void AddDialogs(CampaignGameStarter gameStarter)
         {
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse}I want you to become my main spouse.",
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "{=BE_SE_MS001}I want you to become my main spouse.",
                 () =>
                 {
                     if (Hero.OneToOneConversationHero == null) return false;
@@ -34,11 +34,11 @@ namespace BannerlordExpanded.SpousesExpanded.Polygamy.Behaviors
                 },
                 null
                 );
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure}Are you sure?", null, null);
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes}Yes of course!", null, () => { playerPolygamyBehavior.SetPrimarySpouse(Hero.OneToOneConversationHero); });
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_No", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_No}On second thought, I have changed my mind.", null, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "{=BE_SE_MS002}Are you sure?", null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "{=BE_SE_MS003}Yes of course!", null, () => { playerPolygamyBehavior.SetPrimarySpouse(Hero.OneToOneConversationHero); });
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_No", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result", "lord_pretalk", "{=BE_SE_MS004}On second thought, I have changed my mind.", null, null);
 
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After}I am more than happy to!", null, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After", "lord_pretalk", "{=BE_SE_MS005}I am more than happy to!", null, null);
         }
 
 

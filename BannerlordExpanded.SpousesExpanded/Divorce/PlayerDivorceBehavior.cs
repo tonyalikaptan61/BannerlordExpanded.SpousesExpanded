@@ -18,20 +18,20 @@ namespace BannerlordExpanded.SpousesExpanded.Divorce
 
         void AddDialog(CampaignGameStarter gameStarter)
         {
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Divorce", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceReply", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_Divorce}I am tired of our marriage. Let's divorce and go our separate ways.",
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_Divorce", "BannerlordExpandedSpousesExpanded_SpouseDialog_Start", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceReply", "{=BE_SE_DV001}I am tired of our marriage. Let's divorce and go our separate ways.",
                null,
                null
                );
-            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceReply", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation}A-Are you sure about this?[if:convo_dismayed][ib:nervous]", null, null);
+            gameStarter.AddDialogLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceReply", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "{=BE_SE_DV002}A-Are you sure about this?[if:convo_dismayed][ib:nervous]", null, null);
 
 
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_Yes", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "hero_leave", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_Yes}Yes, I am sure.", null,
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_Yes", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "hero_leave", "{=BE_SE_DV003}Yes, I am sure.", null,
                 () =>
                 {
                     Divorce(Hero.OneToOneConversationHero);
                 });
 
-            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_No", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "lord_pretalk", "{=BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_No}No, I was just joking with you!", null, null);
+            gameStarter.AddPlayerLine("BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_No", "BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation", "lord_pretalk", "{=BE_SE_DV004}No, I was just joking with you!", null, null);
         }
 
         void Divorce(Hero hero)
