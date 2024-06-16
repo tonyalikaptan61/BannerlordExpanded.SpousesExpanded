@@ -1,57 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
-	<tags>
-		<tag language="English" />
-	</tags>
-	<strings>
-		<!-- Base Dialogs -->
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog" text="{?SPOUSE.GENDER}My wife{?}My husband{\?}, I would like to talk to you about something." />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_Start" text="What is it?" />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_Cancel" text="Nevermind." />
-
+  <tags>
+	<tag language="English" />
+  </tags>
+  <strings>
+	<!-- Base Dialogs -->
+	<string id="BE_SE_SD001" text="{?SPOUSE.GENDER}My wife{?}My husband{\?}, I would like to talk to you about something." />
+	<string id="BE_SE_SD002" text="What is it?" />
+	<string id="BE_SE_SD003" text="Nevermind." />
 	
-		<!-- Polygamy (Set Main Spouse) -->
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse" text="I want you to become my main spouse." />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure" text="Are you sure?" />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes" text="Yes of course!" />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_No" text="On second thought, I have changed my mind." />
-		
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_SetMainSpouse_AreYourSure_Result_Yes_After" text="I am more than happy to!" />
+	<!-- Polygamy (Set Main Spouse) -->
+	<string id="BE_SE_MS001" text="I want you to become my main spouse." />
+	<string id="BE_SE_MS002" text="Are you sure?" />
+	<string id="BE_SE_MS003" text="Yes of course!" />
+	<string id="BE_SE_MS004" text="On second thought, I have changed my mind." />
+	<string id="BE_SE_MS005" text="I am more than happy to!" />
 	
-		<!-- Marriage Offer For Player-->
-		<!-- No text to translate, module is patched to use vanilla game logic-->
-		
-		<!-- Don't Want Eldest Member -->
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_Start" text="I was thinking of someone else..." />
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue" text="Who do you have in mind?" />
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue2" text="I see. So you are interested in {HERO_NAME}?" />
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_ContinueFailed" text="Do you have no one in mind?" />
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyConfirm" text="Yes I am interested!" />
-		<string id="BannerlordExpandedSpousesExpanded_DontWantEldestMember_Continue_Success_ReplyCancel" text="Sorry.. I am having second thoughts. Let me consider for a while..." />
-		
-		<string id="BannerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Title" text="Who would you prefer?" />
-		<string id="annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Desc" text="Select Lord/Lady that you want to be the spouse of your selected clan member." />
-		<string id="annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Confirm" text="Confirm" />
-		<string id="annerlordExpandedSpousesExpanded_DontWantYourEldestMember_GameMenu_Cancel" text="Cancel" />
-		
-		<!-- Divorce -->
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_Divorce" text="I am tired of our marriage. Let's divorce and go our separate ways." />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation" text="A-Are you sure about this?" />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_Yes" text="Yes, I am sure." />
-		<string id="BannerlordExpandedSpousesExpanded_SpouseDialog_DivorceConfirmation_No" text="No, I was just joking with you!" />
-		
-		<!-- Settings -->
-		<string id="BannerlordExpandedSpousesExpanded_Settings_Polygamy" text="Player Polygamy" />
-		<string id="BannerlordExpandedSpousesExpanded_Settings_PolygamyEnabled" text="Enable" />
-		
-		<string id="BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMember" text="I Dont Want Your Eldest Member" />
-		<string id="BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMemberEnabled" text="Enable" />
-		<string id="BannerlordExpandedSpousesExpanded_Settings_DontWantEldestMemberEnabled_Desc" text="Enable the option to choose any of the clan's marry-able characters for marriage instead of only the oldest one." />
-		
-		<string id="BannerlordExpandedSpousesExpanded_Settings_MarriageOfferForPlayer" text="Marriage Offer For Player" />
-		<string id="BannerlordExpandedSpousesExpanded_Settings_MarriageOfferForPlayerEnabled" text="Enable" />
-		
-		<string id="BannerlordExpandedSpousesExpanded_Settings_Divorce" text="Player Divorce" />
-		<string id="BannerlordExpandedSpousesExpanded_Settings_DivorceEnabled" text="Enable" />	
-	</strings>
+	<!-- Don't Want Eldest Member -->
+	<string id="BE_SE_DW001" text="I was thinking of someone else..." />
+	<string id="BE_SE_DW002" text="Who do you have in mind?" />
+	<string id="BE_SE_DW003" text="I see. So you are interested in {HERO_NAME}?" />
+	<string id="BE_SE_DW004" text="Do you have no one in mind?" />
+	<string id="BE_SE_DW005" text="Yes I am interested!" />
+	<string id="BE_SE_DW006" text="Sorry.. I am having second thoughts. Let me consider for a while..." />
+	<string id="BE_SE_DW007" text="Who would you prefer?" />
+	<string id="BE_SE_DW008" text="Select Lord/Lady that you want to be the spouse of your selected clan member." />
+	
+	<!-- Divorce -->
+	<string id="BE_SE_DV001" text="I am tired of our marriage. Let's divorce and go our separate ways." />
+	<string id="BE_SE_DV002" text="A-Are you sure about this?[if:convo_dismayed][ib:nervous]" />
+	<string id="BE_SE_DV003" text="Yes, I am sure." />
+	<string id="BE_SE_DV004" text="No, I was just joking with you!" />
+	
+	<!-- Settings -->
+	<string id="BE_SE_OP001" text="Enable" />
+	<string id="BE_SE_OP002" text="Player Polygamy" />
+	<string id="BE_SE_OP003" text="I Dont Want Your Eldest Member" />
+	<string id="BE_SE_OP004" text="Enable the option to choose any of the clan's marry-able characters for marriage instead of only the oldest one." />
+	<string id="BE_SE_OP005" text="Marriage Offer For Player" />
+	<string id="BE_SE_OP006" text="Player Divorce" />
+  </strings>
 </base>
